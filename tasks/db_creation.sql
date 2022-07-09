@@ -44,6 +44,15 @@ Kritériumok az adatbázissal kapcsolatban:
     - az adatbázis, a táblák és a mezők elnevezése rajtad áll, azonban használj angol megnevezéseket, méghozzá következetesen
       (ha az egyik táblában camel-case szerinti mező-neveket adtál, akkor a másik táblában is tégy úgy)
 
+	CREATE TABLE `senderprogram`.`user`
+	(`id` INT NOT NULL AUTO_INCREMENT ,
+	`name` VARCHAR(100) NOT NULL ,
+	`email_address` VARCHAR(100) NOT NULL ,
+	`password` INT NOT NULL , `isaktiv` BOOLEAN NOT NULL ,
+	`registration_date` DATE NOT NULL ,
+	PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
 */
 
 
