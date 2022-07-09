@@ -32,6 +32,9 @@ Jó munkát!
 
     Elvárt eredmény:
         -1523
+
+    SELECT MIN(country.IndepYear)
+    FROM `country`;
 */
 
 
