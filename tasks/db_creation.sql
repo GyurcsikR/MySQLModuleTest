@@ -57,7 +57,11 @@ Kritériumok az adatbázissal kapcsolatban:
 	`email_id` INT NOT NULL ,
 	`last_update` DATE NOT NULL , PRIMARY KEY (`user_id`, `email_id`)) ENGINE = InnoDB;
 
-
+	CREATE TABLE `senderprogram`.`email`
+	(`id` INT NOT NULL AUTO_INCREMENT ,
+	`email_text` TEXT NOT NULL , `date` DATE NOT NULL ,
+	`sender_name` VARCHAR(100) NOT NULL ,
+	`receiver_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
 */
 
 
