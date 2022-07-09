@@ -106,6 +106,10 @@ Jó munkát!
 
     Elvárt eredmény:
         63 rekord
+
+    SELECT country.Code
+    FROM `country`
+    WHERE country.GNPOld > country.GNP;
 */
 
 
