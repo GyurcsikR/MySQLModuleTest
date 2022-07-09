@@ -177,6 +177,10 @@ Jó munkát!
     Elvárt eredmény:
         10 rekord
         a városok ID-ja: 61, 62, 1791, 2316, 2317, 2728, 2805, 2806, 3333, 3538
+
+    SELECT *
+    FROM `city`
+    WHERE city.Population BETWEEN 100 AND 999;
 */
 
 
