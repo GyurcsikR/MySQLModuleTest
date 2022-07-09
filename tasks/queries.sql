@@ -75,6 +75,10 @@ Jó munkát!
     Elvárt eredmény:
         7 rekord
         országnevek: Bangladesh, Bahrain, Kuwait, Mauritania, Qatar, Sudan, Sierra Leone
+
+    SELECT country.Name
+    FROM `country`
+    WHERE country.HeadOfState LIKE '%Ahmad%' OR country.HeadOfState LIKE '%Ahmed%' OR country.HeadOfState LIKE '%Hamad%';
 */
 
 
