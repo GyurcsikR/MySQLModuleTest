@@ -59,6 +59,10 @@ Jó munkát!
         550 rekord
         ID szerint növekvő sorrendben az első 5 darab: 2, 3, 8, 11, 34
         ID szerint növekvő sorrendben az utolsó 3 darab: 4076, 4078, 4079
+
+    SELECT *
+    FROM `city`
+    WHERE city.Name = city.District;
 */
 
 
