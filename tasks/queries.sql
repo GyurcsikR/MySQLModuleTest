@@ -121,6 +121,12 @@ Jó munkát!
 
     Elvárt eredmény:
         29 rekord
+
+    SELECT countrylanguage.Language
+    FROM `countrylanguage`
+    WHERE countrylanguage.Language LIKE '%ian'
+    GROUP BY countrylanguage.Language
+    ORDER BY countrylanguage.Language;
 */
 
 
