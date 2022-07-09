@@ -159,6 +159,13 @@ Jó munkát!
         239 rekord
         első országkód: AFG
         utolsó országkód: ZWE
+
+    SELECT country.Code, country.Name, city.Name
+    FROM country
+    LEFT JOIN city
+    ON country.Code = city.CountryCode
+    GROUP BY country.Code, country.Capital
+    ORDER by country.Name;
 */
 
 
