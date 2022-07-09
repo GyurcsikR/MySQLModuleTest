@@ -140,6 +140,11 @@ Jó munkát!
         Southern Europe: 15
         Western Europe: 9
         Eastern Europe 10
+
+    SELECT country. Region, COUNT(*) AS 'Városok száma a régiókban'
+    FROM `country`
+    WHERE country.Region LIKE '%Europe'
+    GROUP BY country.Region;
 */
 
 
