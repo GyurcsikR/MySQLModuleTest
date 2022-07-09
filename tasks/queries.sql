@@ -250,6 +250,12 @@ Jó munkát!
     Elvárt eredmény:
         7 rekord
         országkódok: ATA, ATF, BVT, HMD, IOT, SGS, UMI
+
+    SELECT country.*
+    FROM `country`
+    LEFT JOIN city
+    ON country.Code = city.CountryCode
+    WHERE city.ID IS NULL;
 */
 
 
