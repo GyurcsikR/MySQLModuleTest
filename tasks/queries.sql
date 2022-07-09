@@ -233,6 +233,12 @@ Jó munkát!
     Elvárt eredmény:
         16 rekord
         országkódok: ABW, ANT, BHR, BRN, COK, DNK, ISL, JPN, KWT, MAC, MCO, MDV, MYS, NOR, PRI, TTO
+
+    SELECT country.*
+    FROM `country`
+    INNER JOIN countrylanguage
+    ON countrylanguage.CountryCode = country.Code
+    WHERE countrylanguage.Language = 'English' AND countrylanguage.IsOfficial = 'F';
 */
 
 
