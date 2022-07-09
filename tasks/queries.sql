@@ -194,6 +194,12 @@ Jó munkát!
     Elvárt eredmény:
         35 rekord
         országkódok, amelyek szerepelnek a listában: DNK, FIN, FRO, ISL, NOR, SJM, SWE
+
+    SELECT city.*
+    FROM `country`
+    INNER JOIN city
+    ON country.Code = city.CountryCode
+    WHERE country.Region = 'Nordic Countries';
 */
 
 
