@@ -91,6 +91,10 @@ Jó munkát!
     Elvárt eredmény:
         10 rekord
         kontinensek: Oceania (7 db), Europe (2), South America (1)
+
+    SELECT *
+    FROM `country`
+    WHERE country.LifeExpectancy IS NULL AND country.Population > 0;
 */
 
 
