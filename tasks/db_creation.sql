@@ -62,6 +62,7 @@ Kritériumok az adatbázissal kapcsolatban:
 	`email_text` TEXT NOT NULL , `date` DATE NOT NULL ,
 	`sender_name` VARCHAR(100) NOT NULL ,
 	`receiver_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
 */
 
 
@@ -73,4 +74,14 @@ Bónusz feladat (5 pont)
 Adj hozzá adatokat mindegyik táblához!
 (Az adatoknak nem kell valósnak lenniük. Egy felhasználói email-cím lehet például: 'valami@valami.va')
 
+INSERT INTO `user` (`id`, `name`, `email_address`, `password`, `isaktiv`, `registration_date`)
+VALUES (NULL, 'Nagy Bogyó', 'bogyo@gmail.com', PASSWORD('12345'), '1', CURRENT_DATE()),
+(NULL, 'Kis Babóca', 'baboca@gmail.com', PASSWORD('66666'), '0', CURRENT_DATE())
+
+INSERT INTO `email` (`id`, `email_text`, `date`, `sender_name`, `receiver_name`)
+VALUES (NULL, 'Egyszer volt, hol nem volt...', CURRENT_DATE(), 'Nagy Bogyó', 'Kis Babóca'),
+(NULL, 'Azt a mesét nem is ismerem...', CURRENT_DATE(), 'Kis Babóca', 'Nagy Bogyó')
+
+
 */
+

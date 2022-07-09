@@ -47,6 +47,10 @@ Jó munkát!
 
     Elvárt eredmény:
         CHN Code-ú ország (China)
+
+    SELECT country.* , MIN(country.IndepYear)
+    FROM `country`
+    WHERE country.IndepYear < 0;
 */
 
 
