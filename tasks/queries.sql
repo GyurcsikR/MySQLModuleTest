@@ -215,6 +215,13 @@ Jó munkát!
         19 rekord
         legkisebb: Northern Africa (1)
         legnagyobb: Caribbean (11)
+
+    SELECT country.Region, COUNT(country.Code) AS cities_db
+    FROM `country`
+    WHERE country.IndepYear < 1500 OR country.IndepYear IS NULL
+    GROUP BY country.Region
+    HAVING COUNT(country.Code)
+    ORDER BY cities_db DESC;
 */
 
 
