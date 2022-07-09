@@ -82,6 +82,9 @@ INSERT INTO `email` (`id`, `email_text`, `date`, `sender_name`, `receiver_name`)
 VALUES (NULL, 'Egyszer volt, hol nem volt...', CURRENT_DATE(), 'Nagy Bogyó', 'Kis Babóca'),
 (NULL, 'Azt a mesét nem is ismerem...', CURRENT_DATE(), 'Kis Babóca', 'Nagy Bogyó')
 
+INSERT INTO `user_email` (`user_id`, `email_id`, `last_update`)
+VALUES ('1', '1', '2022-07-09'), ('2', '2', '2022-07-09')
+
 
 */
 
