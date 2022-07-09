@@ -52,6 +52,11 @@ Kritériumok az adatbázissal kapcsolatban:
 	`registration_date` DATE NOT NULL ,
 	PRIMARY KEY (`id`)) ENGINE = InnoDB;
 
+	CREATE TABLE `senderprogram`.`user_email`
+	(`user_id` INT NOT NULL ,
+	`email_id` INT NOT NULL ,
+	`last_update` DATE NOT NULL , PRIMARY KEY (`user_id`, `email_id`)) ENGINE = InnoDB;
+
 
 */
 
